@@ -1,0 +1,117 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ecf0f1;
+  background-color: white;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+input {
+  background-color: rgba(52, 73, 94, 0.5);
+  color: #ecf0f1;
+  outline: none;
+  text-align: right;
+  border: none;
+  font-size: 1.2rem;
+  width: 18vw;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.container {
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.calculator {
+  padding: 0.25rem;
+  display: inline-block;
+  width: 25vw;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    -23px 0 20px -23px rgba(0, 0, 0, 0.8), 23px 0 20px -23px rgba(0, 0, 0, 0.8),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+table {
+  margin: auto;
+}
+button {
+  border: none;
+  background-color: white;
+  width: 5vw;
+  height: 4vh;
+  padding: 0.5rem 0;
+  margin: 0.25vmax;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+button:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  transition: all 0.5s ease;
+  outline:none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.header {
+  text-decoration: none; 
+  color: #f1c40f; 
+  margin-left: 0.25rem;
+}
+/* a {
+  outline: none;
+  transition: all 0.5s ease;
+}
+a:hover {
+  text-shadow: 0px 0px 10px rgba(241, 196, 15, 0.5);
+  transition: all 0.5s ease;
+} */
+.c {
+  background-color: #e74c3c;
+  font-weight: bold; 
+  color: #ecf0f1;
+}
+.point {
+  font-weight: bold;
+}
+.equally {
+  background-color: #2ecc71;
+  font-weight: bold;
+  color: #ecf0f1;
+}
+hr {
+  max-width: 50vw
+}
+.turn {
+  display: none;
+  z-index: 100;
+  position: fixed;
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .turn {
+    padding-top: 20vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgba(52, 73, 94, 1);
+    background-color: rgba(236, 240, 241, 1);
+  }
+}
