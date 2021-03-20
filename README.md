@@ -1,1 +1,2 @@
-# PetrUdin-CalculatorJS
+# CalculatorJS
+<https://petrudin.github.io/CalculatorJS/.>
