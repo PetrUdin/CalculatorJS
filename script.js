@@ -3,15 +3,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     header.addEventListener("click", function() {
         location.reload()
     });
-    console.log("Javascript Calculator Made by Udin \n")
 
-    document.getElementById('answer').readOnly = true; //set this attribute in Html file
-    let screen = document.getElementById('answer');
+    document.getElementById('answer').readOnly = true; 
+    let screen = document.querySelector('.answer');
     buttons = document.querySelectorAll('button');
     let screenValue = '';
     for (item of buttons) {
         item.addEventListener('click', (e) => {
-            // console.log(buttonText, "has been pressed");
             buttonText = e.target.innerText;
             if (buttonText == 'X') {
                 buttonText = '*';
@@ -34,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     
     document.addEventListener("keydown", function(event) {
-        console.log(event.which);
         if(event.shiftKey==57){
             event.key = '(';
         }
@@ -59,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         else if(event.keyCode == 46){
             screenValue = "";
             screen.value = screenValue;
-            console.clear();
         }
         else if(event.keyCode == 8){
             screenValue = screenValue.slice(0, -1);
@@ -68,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         else if(event.keyCode == 67){
             screenValue = "";
             screen.value = screenValue;
-            console.clear();
         }
         else if(event.keyCode == 82){
             location.reload();
@@ -76,9 +71,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       })
     
       window.onerror = function(){
-          alert("PLEASE INPUT VALID EXPRESSION Ошибка");
+          alert("Недопустимое выражение");
           screenValue = "";
           screen.value = screenValue;
-          console.clear();
       }
 });
