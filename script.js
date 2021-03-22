@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     let header = document.querySelector(".header");
-    header.addEventListener("click", function() {
+    header.addEventListener("click", () => {
         location.reload()
     });
 
     document.querySelector('.answer').readOnly = true;
     let screen = document.querySelector('.answer');
-    buttons = document.querySelectorAll('button');
+    let buttons = document.querySelectorAll('button');
     let screenValue = '';
     for (item of buttons) {
         item.addEventListener('click', (e) => {
