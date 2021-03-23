@@ -9,7 +9,7 @@
 ### Screenshots:
 
 
-![Alt text](/screenshots/1.png)
+![Alt text](1.png)
 
 
 
