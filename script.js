@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     }
     
-    document.addEventListener("keydown", function(event) {
+    document.addEventListener("keydown", (event) => {
         if(event.shiftKey==57){
             event.key = '(';
         }
