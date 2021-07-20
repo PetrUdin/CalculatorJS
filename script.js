@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let buttons = document.querySelectorAll('button');
     let screenValue = '';
     for (item of buttons) {
-        item.addEventListener('click', (e) => {
-            buttonText = e.target.innerText;
+        item.addEventListener('click', (event) => {
+            buttonText = event.target.innerText;
             if (buttonText == 'X') {
                 buttonText = '*';
                 screenValue += buttonText;
